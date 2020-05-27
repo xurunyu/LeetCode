@@ -15,14 +15,35 @@
 
   
   package leetcode.editor.cn;
+
+  import java.util.Arrays;
+
   public class MoveZeroes{
       public static void main(String[] args) {
            Solution solution = new MoveZeroes().new Solution();
+           int[] nums = {0,1,0,3,12};
+           solution.moveZeroes(nums);
+           System.out.println(Arrays.toString(nums));
       }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public void moveZeroes(int[] nums) {
-
+        int count = 0;
+        for (int num : nums) {
+            if (num != 0) {
+                count++;
+            }
+        }
+        int pos = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[pos] = nums[i];
+                pos++;
+            }
+            if (i >= count) {
+                nums[i] = 0;
+            }
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
