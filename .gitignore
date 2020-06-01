@@ -16,3 +16,5 @@ datanucleus.log
 *.log
 event-sourcing/Journal.json
 out/
+leetcode.editor.cn/all.json
+leetcode.editor.cn/translation.json
