@@ -17,7 +17,7 @@
 
 package leetcode.editor.cn;
 
-import apple.laf.JRSUIUtils;
+import leetcode.editor.cn.structure.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -61,10 +61,3 @@ public class BinaryTreePreorderTraversal {
 
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) { val = x; }
-}

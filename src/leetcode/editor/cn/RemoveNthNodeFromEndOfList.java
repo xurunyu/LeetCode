@@ -18,6 +18,8 @@
 
 package leetcode.editor.cn;
 
+import leetcode.editor.cn.structure.ListNode;
+
 public class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
         Solution solution = new RemoveNthNodeFromEndOfList().new Solution();
