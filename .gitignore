@@ -11,9 +11,9 @@ target
 .idea
 *.iml
 *.swp
-datanucleus.log
 /bin/
 *.log
 out/
-all.json
-translation.json
+*.json
+*.png
+*.md
